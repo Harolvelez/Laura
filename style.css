@@ -1,0 +1,88 @@
+body {
+    
+    & main {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+      & h1 {
+        font-size:  2rem;
+        text-align: center;
+        font-weight: 600;
+
+     }
+
+     & .option{
+        font-size: 1.5rem;
+        font-weight: 600;
+
+     }
+
+     & button{
+        padding: .5rem 1.5rem;
+        border: 1px solid rgb(0, 0, 0, .2);
+        border-radius: 5px;
+        cursor:pointer;
+        box-shadow: 2px 2px 2px rgb(0, 0, 0, .2);
+
+
+     }
+
+     & button:hover{
+        box-shadow: 5px 5px 5px; 
+     }
+
+     & button#yes {
+        background-color: rgb(117, 247, 10);
+     }
+
+     & button#no {
+        background-color: rgba(247, 26, 26, 0.863);
+     }
+
+}
+
+
+#message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(228, 121, 238);
+    text-align: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    & h1 {
+
+        font-size:  2rem;
+        text-align: center;
+        font-weight: 500;
+        animation: palpitation 2s ease-in-out infinite;
+
+    }
+
+}
+
+@keyframes palpitation {
+    0% {
+    transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+        }
+
+        
+    100% {
+        transform: scale(1);
+        }
+        
+
+}
